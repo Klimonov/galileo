@@ -1,0 +1,200 @@
+@font-face {
+  font-family: "Neucha";
+  src: url("../fonts/Neucha.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OpenSans-Bold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OpenSans-Light";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSans-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OpenSans-Regular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OpenSans-Semibold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSans-Semibold.ttf") format("truetype");
+}
+body {
+  font-family: Neucha;
+}
+.wrap {
+  /*max-width: 1400px;*/
+  margin: 0 auto 0 auto;
+}
+header {
+  height: 155px;
+}
+header .header-wrap {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+header .header-wrap img {
+  margin-left: 175px;
+}
+header .header-wrap p {
+  font-size: 1.7em;
+  margin-left: 100px;
+  margin-top: 40px;
+  letter-spacing: 0.5px;
+}
+header .header-wrap a {
+  font-size: 2.3em;
+  letter-spacing: 2px;
+  margin-right: 110px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: black;
+}
+header .header-wrap .phone {
+  margin-top: 35px;
+}
+.content-post {
+  /*width: 100%;*/
+  height: 645px;
+  background-image: url(../img/bg-blue.jpg);
+  /*background-size: 100%;*/
+  /*background-repeat: no-repeat;*/
+  padding-top: 25px;
+}
+.content-post h1 {
+  color: white;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.content-post section {
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+.content-post section .video {
+  margin-top: 30px;
+  background-image: url(../img/tv.png);
+  width: 469px;
+  height: 447px;
+}
+.content-post section .video iframe {
+  margin: 88px 0 0 20px;
+}
+.content-post .post {
+  background-color: #a7ce3a;
+  width: 370px;
+  height: 410px;
+  margin-top: 55px;
+  margin-left: 80px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 0px 20px;
+}
+.content-post .post form {
+  display: flex;
+  flex-direction: column;
+}
+.content-post .post form h4 {
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 100;
+  letter-spacing: 1.5px;
+  margin-bottom: 5px;
+}
+.content-post .post form p {
+  color: white;
+  font-size: 1.1em;
+  text-align: center;
+  margin-top: 0;
+  line-height: 25px;
+}
+.content-post .post form input {
+  font-family: Neucha;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  height: 40px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px;
+  padding: 0 15px 0 15px;
+}
+.content-post .post form .check {
+  margin-top: 20px;
+  display: flex;
+  color: white;
+  letter-spacing: 1px;
+}
+.content-post .post form .check .faq-check {
+  vertical-align: top;
+  /*margin: 0 0 0 10px;*/
+}
+.content-post .post form .check label {
+  margin-top: 0px;
+}
+.content-post .post form .check label p {
+  text-align: left;
+  margin-left: 35px;
+  font-size: 1em;
+  line-height: 1em;
+}
+.content-post .post form .faq-check {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.content-post .post form .faq-check-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+.content-post .post form .faq-check-input:checked ~ .faq-check-checkbox:after {
+  opacity: 1;
+  visibility: visible;
+}
+.content-post .post form .faq-check-checkbox:after,
+.content-post .post form .faq-check-input:checked ~ .faq-check-tooltip {
+  opacity: 0;
+  visibility: hidden;
+}
+.content-post .post form .faq-check-checkbox {
+  display: block;
+  position: absolute;
+  left: 7px;
+  width: 17px;
+  height: 17px;
+  /*margin: -8px 0 0;*/
+  border: 1px solid #fff;
+  border-radius: 3px;
+  background-color: white;
+}
+.content-post .post form .faq-check-checkbox:after {
+  /*display: inline-block;*/
+  /*vertical-align: middle;*/
+  background-image: url(../img/check.png);
+  /*background-position: 1 1;*/
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 21px;
+  content: '';
+  position: absolute;
+  /*top: 50%;*/
+  /*left: 50%;*/
+  /*margin: 0px 0 0 -9px;*/
+  z-index: 999!important;
+}
+.content-post .post form .button-gift {
+  width: 220px;
+  margin: 0 auto;
+  background-color: #0094d4;
+  color: white;
+}

@@ -1,0 +1,203 @@
+@green: #a7ce3a;
+@blue: #0094d4;
+@orange: #cf571b;
+
+@font-face {
+  font-family: "Neucha";
+ src: url("../fonts/Neucha.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  font-weight: normal;
+  font-style: normal;
+ src: url("../fonts/OpenSans-Bold.ttf") format("truetype"); }
+
+  @font-face {
+  font-family: "OpenSans-Light";
+  font-weight: normal;
+  font-style: normal;
+ src: url("../fonts/OpenSans-Light.ttf") format("truetype"); }
+
+  @font-face {
+  font-family: "OpenSans-Regular";
+  font-weight: normal;
+  font-style: normal;
+ src: url("../fonts/OpenSans-Regular.ttf") format("truetype"); }
+
+  @font-face {
+  font-family: "OpenSans-Semibold";
+  font-weight: normal;
+  font-style: normal;
+ src: url("../fonts/OpenSans-Semibold.ttf") format("truetype"); }
+
+body {
+  font-family: Neucha;
+}
+.wrap {
+  /*max-width: 1400px;*/
+  margin: 0 auto 0 auto;
+}
+header {
+  height: 155px;
+  .header-wrap {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    img {
+      margin-left: 175px;
+    }
+    p {
+        font-size: 1.7em;
+        margin-left: 100px;
+        margin-top: 40px;
+        letter-spacing: 0.5px;
+    }
+    a {
+      font-size: 2.3em;
+      letter-spacing: 2px;
+      margin-right: 110px;
+      margin-top: 10px;
+      text-decoration: none;
+      color: black;
+    }
+    .phone {
+      margin-top: 35px;
+    }
+  }
+}
+.content-post {
+  /*width: 100%;*/
+  height: 645px;
+  background-image: url(../img/bg-blue.jpg);
+  /*background-size: 100%;*/
+  /*background-repeat: no-repeat;*/
+  padding-top: 25px;
+  h1 {
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  section {
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    .video {
+      margin-top: 30px;
+      background-image: url(../img/tv.png);
+      width: 469px;
+      height: 447px;
+      iframe {
+        margin: 88px 0 0 20px;
+      }
+    }
+  }
+  .post {
+    background-color: @green;
+    width: 370px;
+    height: 410px;
+    margin-top: 55px;
+    margin-left: 80px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    form {
+      display: flex;
+      flex-direction: column;
+      h4 {
+        color: white;
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: 100;
+        letter-spacing: 1.5px;
+        margin-bottom: 5px;
+      }
+      p {
+        color: white;
+        font-size: 1.1em;
+        text-align: center;
+        margin-top: 0;
+        line-height: 25px;
+      }
+      input {
+        font-family: Neucha;
+        font-size: 1.1em;
+        letter-spacing: 1px;
+        height: 40px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px;
+        padding: 0 15px 0 15px;
+      }
+      .check {
+        margin-top: 20px;
+        display: flex;
+        color: white;
+        letter-spacing: 1px;
+        .faq-check {
+          vertical-align: top;
+          /*margin: 0 0 0 10px;*/
+        }
+        label {
+          margin-top: 0px;
+          p {
+            text-align: left;
+            margin-left: 35px;
+            font-size: 1em;
+            line-height: 1em;
+          }
+        }
+      }
+      .faq-check {
+        position: relative;
+        display: block;
+        cursor: pointer;
+      }
+      .faq-check-input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+       }
+      .faq-check-input:checked~.faq-check-checkbox:after {
+          opacity: 1;
+          visibility: visible;
+      }
+      .faq-check-checkbox:after, .faq-check-input:checked~.faq-check-tooltip {
+          opacity: 0;
+          visibility: hidden;
+      }
+      .faq-check-checkbox {
+          display: block;
+          position: absolute;
+          left: 7px;
+          width: 17px;
+          height: 17px;
+          /*margin: -8px 0 0;*/
+          border: 1px solid #fff;
+          border-radius: 3px;
+          background-color: white;
+      }
+      .faq-check-checkbox:after{
+          /*display: inline-block;*/
+          /*vertical-align: middle;*/
+          background-image: url(../img/check.png);
+          /*background-position: 1 1;*/
+          background-repeat: no-repeat;
+          width: 21px;
+          height: 21px;
+          content: '';
+          position: absolute;
+          /*top: 50%;*/
+          /*left: 50%;*/
+          /*margin: 0px 0 0 -9px;*/
+          z-index: 999!important;
+      }
+      .button-gift {
+        width: 220px;
+        margin: 0 auto;
+        background-color: @blue;
+        color: white;
+      }
+    }
+  }
+}
