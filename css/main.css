@@ -101,7 +101,7 @@ header .header-wrap .phone {
 .content-post .hide {
   position: fixed;
   z-index: 999;
-  top: 170px;
+  top: 10%;
 }
 .content-post .post {
   background-color: #a7ce3a;
