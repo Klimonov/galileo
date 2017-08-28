@@ -95,6 +95,8 @@ header .header-wrap .phone {
 }
 .content-post section .video iframe {
   margin: 88px 0 0 20px;
+  width: 428px;
+  height: 282px;
 }
 .content-post .post {
   background-color: #a7ce3a;
@@ -269,8 +271,8 @@ header .header-wrap .phone {
   background-image: url(../img/li.png);
   background-repeat: no-repeat;
   padding-left: 45px;
-  padding-top: 3px;
   padding-bottom: 30px;
+  padding-top: 3px;
 }
 .content-info section .row .format {
   width: 373px;
@@ -436,5 +438,63 @@ footer p {
   }
   .content-test {
     height: 510px;
+  }
+}
+@media (max-width: 390px) {
+  header img {
+    width: 80px!important;
+  }
+  header .addres {
+    position: absolute;
+    top: 90px;
+    left: -80px;
+  }
+  header .addres p {
+    font-size: 1.5em!important;
+  }
+  header .phone a {
+    font-size: 1.8em;
+    margin-left: 20px;
+  }
+  section {
+    /*display: block!important;*/
+  }
+  section .video {
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 350px!important;
+  }
+  section .video iframe {
+    margin: 58px 0 0 10px!important;
+    width: 300px!important;
+    height: 194px!important;
+  }
+  .post {
+    height: 450px!important;
+  }
+  .content-post {
+    height: 1110px;
+  }
+  .content-info {
+    height: 1520px;
+  }
+  .content-info .title {
+    width: 300px;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .content-info .title h1 {
+    font-size: 1.6em;
+    padding-top: 10px;
+  }
+  .content-test {
+    height: 750px;
+  }
+  .content-info section .row .list h2 {
+    text-align: center;
+  }
+  .content-info section .row .list ul li {
+    padding-top: 0;
   }
 }
