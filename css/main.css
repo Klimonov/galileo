@@ -51,10 +51,9 @@ header .header-wrap .logo img {
 }
 header .header-wrap p {
   font-size: 1.7em;
-  margin-left: 15%;
   width: 365px;
-  margin-top: 40px;
   letter-spacing: 0.5px;
+  margin-left: 15%;
 }
 header .header-wrap a {
   font-size: 2.3em;
@@ -66,7 +65,8 @@ header .header-wrap a {
   color: black;
 }
 header .header-wrap .phone {
-  margin-top: 35px;
+  margin-top: 25px;
+  margin-left: 59px;
 }
 .content-post {
   /*width: 100%;*/
@@ -255,7 +255,7 @@ header .header-wrap .phone {
   letter-spacing: 1px;
 }
 .content-info section .row .list p {
-  width: 600px;
+  max-width: 600px;
   text-align: left;
 }
 .content-info section .row .list ul {
@@ -273,7 +273,7 @@ header .header-wrap .phone {
   padding-bottom: 30px;
 }
 .content-info section .row .format {
-  width: 370px;
+  width: 373px;
   height: 310px;
   border-radius: 5px;
   background-color: #0094d4;
@@ -371,8 +371,70 @@ footer p {
   letter-spacing: 1px;
   font-size: 1.3em;
 }
-@media (max-width: 940px) {
-  header {
-    padding: 0 10px;
+@media (max-width: 1080px) {
+  header,
+  .content-post,
+  .content-info,
+  .content-test,
+  footer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .logo {
+    position: absolute;
+    left: 10px;
+  }
+  .logo img {
+    margin-left: 0!important;
+  }
+  .addres {
+    margin-top: -10px;
+    height: 40px !important;
+  }
+  .addres p {
+    margin-left: 100px!important;
+  }
+  a {
+    margin-top: 10px!important;
+  }
+  .content-info {
+    height: 1250px;
+  }
+  .format {
+    margin-top: 18px!important;
+  }
+  .content-test {
+    height: 470px;
+  }
+  button {
+    font-size: 1.4em!important;
+    line-height: 1.5!important;
+  }
+}
+@media (max-width: 877px) {
+  .content-post {
+    height: 1150px;
+  }
+  .content-info {
+    height: 1250px;
+  }
+  .content-test {
+    height: 470px;
+  }
+}
+@media (max-width: 687px) {
+  .content-info {
+    height: 1300px;
+  }
+  .content-test {
+    height: 490px;
+  }
+}
+@media (max-width: 645px) {
+  .content-info {
+    height: 1350px;
+  }
+  .content-test {
+    height: 510px;
   }
 }
