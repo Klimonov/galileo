@@ -136,6 +136,7 @@ header .header-wrap .phone {
   border-radius: 5px;
   border: 1px;
   padding: 0 15px 0 15px;
+  width: 90%;
 }
 .content-post .post form .check {
   margin-top: 20px;
