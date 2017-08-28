@@ -450,7 +450,7 @@ footer p {
     left: -80px;
   }
   header .addres p {
-    font-size: 1.5em!important;
+    font-size: 1.45em!important;
   }
   header .phone a {
     font-size: 1.8em;
@@ -467,7 +467,7 @@ footer p {
   }
   section .video iframe {
     margin: 62px 0 0 15px!important;
-    width: 310px!important;
+    width: 311px!important;
     height: 210px!important;
   }
   .post {
