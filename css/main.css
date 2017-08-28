@@ -98,6 +98,11 @@ header .header-wrap .phone {
   width: 428px;
   height: 282px;
 }
+.content-post .hide {
+  position: fixed;
+  z-index: 999;
+  top: 170px;
+}
 .content-post .post {
   background-color: #a7ce3a;
   height: 410px;
@@ -213,6 +218,10 @@ header .header-wrap .phone {
 .content-post .post form .button-gift:hover {
   opacity: 0.6;
   transition: .5s;
+}
+#popup {
+  visibility: hidden;
+  opacity: 0;
 }
 .content-info {
   height: 900px;
@@ -373,6 +382,24 @@ footer p {
   margin-top: 40px;
   letter-spacing: 1px;
   font-size: 1.3em;
+}
+.popup-close {
+  background: url(../img/close.png);
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
+  padding: 0;
+  opacity: .6;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: .25s;
+}
+.popup-close:hover {
+  opacity: 1;
 }
 @media (max-width: 1080px) {
   header,
