@@ -51,9 +51,9 @@ header .header-wrap .logo img {
 }
 header .header-wrap p {
   font-size: 1.7em;
-  width: 365px;
   letter-spacing: 0.5px;
   margin-left: 15%;
+  width: 365px;
 }
 header .header-wrap a {
   font-size: 2.3em;
@@ -466,9 +466,9 @@ footer p {
     height: 350px!important;
   }
   section .video iframe {
-    margin: 58px 0 0 10px!important;
-    width: 300px!important;
-    height: 194px!important;
+    margin: 62px 0 0 15px!important;
+    width: 308px!important;
+    height: 210px!important;
   }
   .post {
     height: 450px!important;
@@ -496,5 +496,8 @@ footer p {
   }
   .content-info section .row .list ul li {
     padding-top: 0;
+  }
+  .header-wrap p {
+    width: 320px!important;
   }
 }
