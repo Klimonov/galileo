@@ -4,7 +4,8 @@ $(document).ready(function() {
 		$('.send-message').delay(300).css({'visibility': 'visible'}).animate({'opacity':'1'}, 1200);  
 		$('.send-message').delay(1200).animate({'opacity':'0'}, 1200, function () {   
 			$(this).css({'visibility': 'hidden'})  });
-		$('#popup').animate({'opacity':'0'}, 600).css({'visibility': 'hidden'});
+		$('#popup').animate({'opacity':'0'}, 600, function () {   
+			$(this).css({'visibility': 'hidden'})  });
 
 		$.ajax({
 			type: "POST",
@@ -19,10 +20,10 @@ $(document).ready(function() {
 		return false;
 	});
 	$(".button-popup").on("click", function() {
-     $('#popup').animate({'opacity':'1'}, 600).delay(2200).css({'visibility': 'visible'})
+     $('#popup').animate({'opacity':'1'}, 600).delay(200).css({'visibility': 'visible'})
    	});
 	$(".popup-close").on("click", function() {
-     $('#popup').animate({'opacity':'0'}, 600).css({'visibility': 'hidden'})
-   	});
+     $('#popup').animate({'opacity':'0'}, 600, function () {   
+			$(this).css({'visibility': 'hidden'}) });  });
 
 });
